@@ -8,12 +8,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+  @IBOutlet weak var welcomeLabel: UILabel!
+  @IBOutlet weak var emailLabel: UILabel!
+  @IBOutlet weak var passwordLabel: UILabel!
+  
+  @IBOutlet weak var userImageView: UIImageView!
+  
+  @IBOutlet weak var emailTextField: UITextField!
+  @IBOutlet weak var passwordTextField: UITextField!
+  
+  
+  @IBOutlet weak var sendButton: UIButton!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    self.welcomeLabel.text = "Welcome !"
   }
-
-
+  
+  @IBAction func tappedSendButton(_ sender: UIButton) {
+    userImageView.tintColor = .black
+    sendButton.backgroundColor = .black
+  }
 }
-
